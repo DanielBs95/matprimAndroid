@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.resultado.ResultadoFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:background="@drawable/icons"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+                >
+
+        <ImageView
+            android:id="@+id/cerrar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/com_facebook_close"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/resultado_textual"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#35B342"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="Eres increíble.\n¡Lo lograste!" />
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_marginTop="200dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        android:text="14/14" />
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#35B342"
+        android:textSize="25dp"
+        android:text="ERES INCREIBLE, LOGRASTE" />
+
+
+</RelativeLayout>

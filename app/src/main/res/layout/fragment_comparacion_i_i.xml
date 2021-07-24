@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragmentos.ComparacionIFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:background="@drawable/icons"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cerrar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/com_facebook_close"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#255CE6"
+        android:textStyle="bold"
+
+        android:text="De acuerdo  a esta comparación, elige la opción correcta"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:weightSum="2"
+        android:padding="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="92"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+        <EditText
+            android:text="105"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/seleccion_primero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/primero"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:text="92 es mayor que 105"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/seleccion_segundo"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/segundo"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:text="105 es mayor que 92"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seleccion_tercero"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tercero"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="105 es menor que 92"
+                android:padding="10dp"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/validar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="Validar"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>

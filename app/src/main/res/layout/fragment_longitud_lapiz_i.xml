@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragmentos.LongitudLapizFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".3"
+        android:background="@drawable/icons"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cerrar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/com_facebook_close"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Longitud"
+            android:textSize="28dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Aprendiendo longitudes"
+
+
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="¿Cúal es el tren de menor longitud?"
+
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#255CE6"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A.)"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:layout_weight=".1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tren"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.)"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:layout_weight=".4"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tren"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C.)"
+                android:textSize="30dp"/>
+
+            <ImageView
+                android:layout_weight=".9"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tren"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_marginBottom="20dp"
+            android:text="Marca la respuesta correcta."
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#255CE6"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/seleccion_tercero"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tercero"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="3"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_transparente"
+                    android:textSize="25dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/seleccion_primero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/primero"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="1"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_transparente"
+                    android:textSize="25dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/seleccion_segundo"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/segundo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="2"
+                    android:padding="10dp"
+                    android:background="@drawable/circle_transparente"
+                    android:textSize="25dp"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/validar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="30dp"
+
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="Validar"
+        android:textSize="20dp" />
+
+</RelativeLayout>
